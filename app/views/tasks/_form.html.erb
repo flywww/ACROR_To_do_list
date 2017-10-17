@@ -1,0 +1,21 @@
+<div class="form container">
+  <%= form_for @task do |f| %>
+  <div class="form-group">
+      <%= f.label :name, 'Task'%>
+      <%= f.text_field :name %>
+  </div>
+  <div class="form-group">
+      <%= f.label :due_date, 'Due date'%>
+      <%= f.text_field :due_date %>
+  </div>
+  <div class="form-group">
+      <%= f.label :note, 'Note'%>
+      <%= f.text_field :note %>
+  </div>
+  <div class="form-group">
+      <%= f.submit %>
+  </div>
+  <% end %>
+</div>
+
+<%= link_to 'Back to index', tasks_path %>
